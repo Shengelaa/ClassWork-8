@@ -3,12 +3,6 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 
 const Header = () => {
-  const navigate = useNavigate();
-
-  const handleSignIn = () => {
-    navigate("SignIn");
-  };
-
   return (
     <header className={styles.Header}>
       <div>
@@ -21,7 +15,7 @@ const Header = () => {
         <li>Locations</li>
       </ul>
       <div>
-        <button onClick={handleSignIn}>Sign In</button>
+        <button>Sign In</button>
         <button className={styles.Button}>Sign Up</button>
       </div>
     </header>

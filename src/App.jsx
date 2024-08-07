@@ -6,7 +6,7 @@ import Header from "./Components/Header";
 const App = () => {
   return (
     <>
-      <Header />
+      <Header></Header>
     </>
   );
 };
