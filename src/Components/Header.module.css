@@ -1,0 +1,43 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+  color: #74768f;
+  font-weight: 600;
+}
+
+button {
+  width: 100px;
+  height: 56px;
+  border-radius: 8px;
+  margin-right: 10px;
+  color: white;
+  background-color: #0a157a;
+  border: 0px;
+
+  cursor: pointer;
+}
+
+h1 {
+  color: #252630;
+  font-size: 27px;
+}
+
+.Button {
+  color: #0a157a;
+  background-color: white;
+  border: 1px solid #0a157a;
+}
