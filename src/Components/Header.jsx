@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -9,14 +9,26 @@ const Header = () => {
         <h1>WaterDrop</h1>
       </div>
       <ul>
-        <li>About Us</li>
-        <li>Projects</li>
-        <li>Impact</li>
-        <li>Locations</li>
+        <li>
+          <Link to='/AboutUs'>About Us</Link>
+        </li>
+        <li>
+          <Link to='/Projects'>Projects</Link>
+        </li>
+        <li>
+          <Link to='/Impact'>Impact</Link>
+        </li>
+        <li>
+          <Link to='/Locations'>Locations</Link>
+        </li>
       </ul>
       <div>
-        <button>Sign In</button>
-        <button className={styles.Button}>Sign Up</button>
+        <Link to='/SignIn'>
+          <button>Sign In</button>
+        </Link>
+        <Link to='/SignUp'>
+          <button className={styles.Button}>Sign Up</button>
+        </Link>
       </div>
     </header>
   );
